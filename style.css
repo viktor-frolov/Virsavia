@@ -1,0 +1,81 @@
+a {
+  	color: #000000;
+  	text-decoration: none;
+}
+body {
+	margin: 0;
+	font-family: muller;
+}
+/*.............................header.............................*/
+.header {
+  	background-color: #85429F;
+  	box-sizing: border-box;
+  	padding: 12px 40px;
+	display: flex;
+	height: 103px;
+	width: 100%;
+}
+ .menu-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 7.6%;
+	width: 100%;
+}
+.navigation {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+ .menu {
+ 	color: #ffffff;
+ 	font-size: 24px;
+ 	letter-spacing: 1px;
+
+}
+ .button_header {
+ 	width: 210px;
+ 	height: 44px;
+ 	box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.text-button {
+ 	font-size: 18px;
+ 	letter-spacing: 1px;
+}
+
+
+	
+
+.banner {
+	height: 697px;
+  	background-color: #0a0e34;
+  	background-image: url("img/banner.jpg");
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	background-size: cover; 
+  	box-sizing: border-box;
+  	/*padding: 270px 402px;*/
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+ }
+ .virsavia-logo {
+
+ 	display: flex;
+ 	justify-content: center;
+  	align-items: center;
+ }
+ .banner-name {
+ 	padding-top: 14px;
+ 	margin-left: 10px;
+ 	font-size: 62px;
+ 	letter-spacing: 10px;
+ 	color: #ffffff;
+ 	text-transform: uppercase;
+ 	
+ }
