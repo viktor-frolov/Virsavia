@@ -5,6 +5,17 @@
 	  	<title>Diploma Frolov Viktor</title>
 	  	<link rel="stylesheet" href="style.css">
 	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+	  	<script type="text/javascript">
+			$(document).ready(function() {
+   				 $('a[href^="#"]').click(function () { 
+    			 	elementClick = $(this).attr("href");
+    			 	destination = $(elementClick).offset().top;
+  					 $('html, body').animate({scrollTop: destination}, 1000);
+   			  		return false;
+ 			  	});
+			 });
+		</script>
 	</head>
 
 	<body>
@@ -17,10 +28,10 @@
 				</svg>
 			</a>
 			<div class="menu-container">
-				<ul class="navigation">
-					<li><a href="#0" class="menu">Услуги</a></li>
-					<li><a href="#0" class="menu">О нас</a></li>
-					<li><a href="#0" class="menu">Контакты</a></li>
+				<ul class="nav">
+					<li><a href="#services-link" class="menu">Услуги</a></li>
+					<li><a href="#studio-link" class="menu">О нас</a></li>
+					<li><a href="#contacts-link" class="menu">Контакты</a></li>
 					<li><a href="#0" class="menu">Акции</a></li>
 				</ul>
 				<button class="button_header">
@@ -34,7 +45,8 @@
 			</div>
 
 		</header>
-		<div class="banner">
+		<main class="main">
+			<div class="banner">
 			<div class="virsavia-logo" >
 					<svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<ellipse cx="39.2331" cy="39.5" rx="39.2331" ry="39.5" fill="white"/>
@@ -44,6 +56,85 @@
 				<span class="banner-name">ирсавия</span>
 			</div>
 			<span class="text-banner">Студия массажа и коррекции фигуры</span>
-		</div>
+			</div>
+			<div class="services">
+				<div id="services-link" name="services-link">
+					<h2 class="heading" >Наши услуги</h2>
+					<div class="services-list">
+						<a href="#0"><div class="services-1">
+							<img src="img/img-1.png" class="services-img">
+							<span class="services-text">Расслабляющие виды массажа</span>
+						</div></a>
+						<a href="#0"><div class="services-2">
+							<img src="img/img-4.png" class="services-img">
+							<span class="services-text">Скульптурные техники массажа лица</span>
+						</div></a>
+						<a href="#0"><div class="services-3">
+							<img src="img/img-3.png" class="services-img">
+							<span class="services-text">Коректирующие виды массажа</span>
+						</div></a>
+					</div>
+				</div>
+			</div>
+			<div class="studio">
+				<a id="studio-link"><h2 class="heading">Студия «Вирсавия»</h2></a>
+				<div class="studio-list">
+					<div class="services-1">
+						<span class="studio-banner">>500</span>
+						<span class="studio-text">довольных клиентов ужепобывали в нашей студии и олжают возвращаться</span>
+					</div>
+					<div class="services-2">
+						<span class="studio-banner">6 лет</span>
+						<span class="studio-text">мы помогаем вам получить стройное тело, поддержать свою молодость и красоту</span>
+					</div>
+					<div class="services-3">
+						<span class="studio-banner">2500</span>
+						<span class="studio-text">рублей стоит наша самая дорогая процедура</span>
+					</div>
+				</div>
+			</div>
+			<div class="masters">
+				<h2 class="heading">Наши мастера</h2>
+				<div class="masters-list">
+					<div class="services-masters">
+						<img src="img/masters-1.jpg" class="masters-img">
+						<span class="masters-name">Ольга Хамраева</span>
+						<span class="masters-position">Старший мастер</span>
+						<span class="masters-text">Опыт работы - более 5 лет. Пластический массаж лица, буккальный массаж, испанская техника массажа лица, общеоздоровительный массаж, антицеллюлитный, коррекция фигуры, восковая депиляция</span>
+					</div>
+					<div class="services-masters">
+						<img src="img/masters-2.jpg" class="masters-img">
+						<span class="masters-name">Екатерина Шумилова</span>
+						<span class="masters-position">Мастер</span>
+						<span class="masters-text">Опыт работы - более 2 лет. Коррекция фигуры, антицеллюлитный массаж, хиромассаж лица, общеоздоровительный массаж тела, восковая депиляция</span>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="contacts" id="contacts-link">
+				<span class="footer-text">Контактный телефон</span>
+				<span class="phone">8 (923) 334 02 41</span>
+				<span class="address-name">Адрес студии:</span>
+				<span class="address">Красноярск, ул.Высотная 2 стр.8 Октябрьский офисный центр, кабинет 305/1</span>
+			</div class="map-container">
+			<div class="map"> 
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae47a94cbe5294c2990101b223492e376f96aa733432e0420f08372f52c090a05&amp;width=440&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+			<div>
+				<span class="footer-text">Мы в соцснтях</span>
+				<div>
+					<a href="#0">
+						<img src="img/vk.png" class="social">
+					</a>
+					<a href="#0">
+						<img src="img/inst.png" class="social">
+					</a>
+				</div>
+			</div>
+		</footer>
 	</body>	
 </html>
+
+
+<!--..............1425px.............-->

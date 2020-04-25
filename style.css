@@ -22,11 +22,12 @@ body {
 	margin-left: 7.6%;
 	width: 100%;
 }
-.navigation {
+.nav {
 	width: 50%;
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
+	padding-inline-start: 0px;
 }
  .menu {
  	color: #ffffff;
@@ -41,6 +42,8 @@ body {
     border-radius: 10px;
     background-color: #ffffff;
     border: 1px solid #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .text-button {
  	font-size: 18px;
@@ -58,7 +61,6 @@ body {
   	background-position: center center;
   	background-size: cover; 
   	box-sizing: border-box;
-  	/*padding: 270px 402px;*/
   	display: flex;
   	flex-direction: column;
   	justify-content: center;
@@ -77,5 +79,136 @@ body {
  	letter-spacing: 10px;
  	color: #ffffff;
  	text-transform: uppercase;
- 	
  }
+.text-banner {
+	font-size: 36px;
+ 	letter-spacing: 1px;
+ 	color: #ffffff;
+ 	position: relative;
+ 	margin-top: 34px;
+
+}
+.text-banner::after {
+	content: ""; 
+	position: absolute;
+	background-color: #ffffff;
+	width: 120px;
+	height: 2px;
+	top: -20px; 
+	left: 50%;
+	margin-left: -60px;
+	border-radius: 2px;
+}
+.services, .studio, .masters {
+	padding-top: 71px;
+	padding-left: 105px;
+	padding-right: 105px;
+	padding-bottom: 100px;
+}
+.heading {
+	font-size: 36px;
+	letter-spacing: 1px;
+	display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+
+.services-list, .studio-list, .masters-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-1, .services-2, .services-3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.services-img {
+	width: 345px;
+	height: 345px;
+    border-radius: 300px;
+    border: 4px solid #000000; 
+}
+.services-text, .studio-text, .masters-text {
+	width: 280px;
+	text-align: center;
+	font-size: 24px;
+	letter-spacing: 1px;
+	margin-top: 22px;
+}
+.studio-text {
+	text-align: left;
+	width: 300px;
+}
+.studio-banner {
+	text-align: left;
+	font-size: 120px;
+	color: #85429F;
+}
+.masters-list {
+	align-items: flex-start;
+}
+.services-masters {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.masters-img {
+	margin-bottom: 24px;
+}
+.masters-name {
+	font-size: 36px;
+	text-align: left;
+
+}
+.masters-position {
+	font-size: 24px;
+	text-align: left;
+}
+.masters-text {
+	text-align: left;
+	width: 460px;
+}
+.footer {
+	background-color: #85429F;
+	display: flex;
+	box-sizing: border-box;
+	width: 100%;
+	height: 300px;
+	padding: 40px;
+
+}
+.contacts {
+	display: flex;
+	flex-direction: column;
+	width: 520px;
+	margin-right: 100px;
+}
+.footer-text, .address-name, .address {
+	font-size: 24px;
+	color: #ffffff;
+}
+.footer-text, .address-name {
+	margin-bottom: 15px;
+}
+.phone {
+	font-size: 36px;
+	color: #ffffff;
+	margin-bottom: 40px;
+}
+
+
+.map {
+	margin-right: 100px;
+	width: 440px;
+}
+.social {
+	box-sizing: border-box;
+	width: 76px;
+	margin-top: 25px;
+	padding-right: 14px;
+}
