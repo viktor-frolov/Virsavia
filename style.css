@@ -4,15 +4,30 @@ a {
 }
 body {
 	margin: 0;
-	font-family: muller;
+	font-family: OpenSans;
 }
+@font-face { 
+  font-family: OpenSans; 
+  src: url("fonts/OpenSans-Regular.woff"); 
+  font-weight: 400; 
+  font-style: normal; 
+} 
+
+
 /*.............................header.............................*/
+
+
+
 .header {
   	background-color: #85429F;
   	box-sizing: border-box;
   	padding: 12px 40px;
 	display: flex;
 	height: 103px;
+	width: 100%;
+}
+.header-container {
+	display: flex;
 	width: 100%;
 }
  .menu-container {
@@ -33,7 +48,6 @@ body {
  	color: #ffffff;
  	font-size: 24px;
  	letter-spacing: 1px;
-
 }
  .button_header {
  	width: 210px;
@@ -50,6 +64,9 @@ body {
  	letter-spacing: 1px;
 }
 
+
+
+/*.............................banner.............................*/
 
 	
 
@@ -73,7 +90,7 @@ body {
   	align-items: center;
  }
  .banner-name {
- 	padding-top: 14px;
+
  	margin-left: 10px;
  	font-size: 62px;
  	letter-spacing: 10px;
@@ -99,18 +116,28 @@ body {
 	margin-left: -60px;
 	border-radius: 2px;
 }
+
+
+
+/*.............................main.............................*/
+
+
+
+
 .services, .studio, .masters {
 	padding-top: 71px;
 	padding-left: 105px;
 	padding-right: 105px;
-	padding-bottom: 100px;
+	padding-bottom: 29px;
 }
 .heading {
 	font-size: 36px;
 	letter-spacing: 1px;
-	display: flex;
+	display: flex; /*тут видать надо текст алай*/
     justify-content: center;
     padding-bottom: 45px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 
@@ -134,7 +161,7 @@ body {
     border: 4px solid #000000; 
 }
 .services-text, .studio-text, .masters-text {
-	width: 280px;
+	width: 300px;
 	text-align: center;
 	font-size: 24px;
 	letter-spacing: 1px;
@@ -142,12 +169,12 @@ body {
 }
 .studio-text {
 	text-align: left;
-	width: 300px;
 }
 .studio-banner {
 	text-align: left;
 	font-size: 120px;
 	color: #85429F;
+	width: 300px;
 }
 .masters-list {
 	align-items: flex-start;
@@ -173,6 +200,12 @@ body {
 	text-align: left;
 	width: 460px;
 }
+
+
+/*.............................footer.............................*/
+
+
+
 .footer {
 	background-color: #85429F;
 	display: flex;
@@ -180,6 +213,10 @@ body {
 	width: 100%;
 	height: 300px;
 	padding: 40px;
+}
+.footer-container {
+	display: flex;
+	width: 100%;
 
 }
 .contacts {
@@ -198,7 +235,7 @@ body {
 .phone {
 	font-size: 36px;
 	color: #ffffff;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 
@@ -211,4 +248,154 @@ body {
 	width: 76px;
 	margin-top: 25px;
 	padding-right: 14px;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+@media (min-width: 1440px)  {
+
+	.bammer {
+		max-width: 1440px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.services {
+		max-width: 1300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.studio {
+		max-width: 1300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.masters {
+		max-width: 1220px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.header-container {
+		max-width: 1300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.footer-container {
+		width: 1340px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+
+@media (max-width: 700px) {
+	.virsavia-logo { /* почему то не отоброжается*/
+		width: 50px;
+		height: 50px;
+	}
+	.banner-name {
+		font-size: 36px;
+	}
+	.text-banner {
+		font-size: 18px;
+	}
+	.services-list, .studio-list, .masters-list {
+		display: block;
+	}
+	.heading {
+		font-size: 24px;
+	}
+	.services-1, .services-2, .services-3 {
+		padding-bottom: 50px;
+	}
+	.services-text, .studio-text, .masters-text {
+		margin-top: 15px;
+		font-size: 18px;
+	}
+	.studio-text {
+		margin-top: 0px;
+	}
+	.masters-position {
+		font-size: 18px;
+	}
+	.masters-name {
+		font-size: 24px;
+	}
+	.studio {
+		background-color: #F3F3F3;
+	}
+	.studio-banner {
+		font-size: 48px;
+	}
+	.services-masters {
+		margin-bottom: 50px;
+	}
+	.img {
+		width:: 222px;
+		height: 222px;
+		border-radius: 150px;
+		margin-bottom: 24px;
+	}
+	.services-masters {
+		align-items: center;
+	}
+	.masters-text {
+		width: 300px;
+	}
+
+
+
+
+
+
+	.footer {
+		padding: 24px;
+	}
+	.footer-container {
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+		width: 320px;
+	}
+	.contacts {
+		width: 290px;
+		margin-right: 0px;
+	}
+	.footer-text, .address-name, .address {
+		font-size: 18px;
+	}
+
+	.footer-text, .address-name {
+		margin-bottom: 10px;
+	}
+	.phone {
+		font-size: 24px;
+		margin-bottom: 24px;
+	}
+
+
+	.map {
+		display: none;
+	}
+	.social-container {
+		display: flex;
+		height: 60px;
+		align-items: center;
+		justify-content: 
+	}
+	.icon-container {
+		margin-left: 20px;
+	}
+	.social {
+		width: 60px;
+		margin-top: 0px;
+}
+
+
+
 }
