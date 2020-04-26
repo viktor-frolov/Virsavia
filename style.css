@@ -294,6 +294,13 @@ body {
 
 
 @media (max-width: 700px) {
+	
+
+
+
+
+
+
 	.virsavia-logo { /* почему то не отоброжается*/
 		width: 50px;
 		height: 50px;
@@ -303,10 +310,16 @@ body {
 	}
 	.text-banner {
 		font-size: 18px;
+		align-items: center;
 	}
 	.services-list, .studio-list, .masters-list {
 		display: block;
 	}
+	.services, .studio, .masters {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 	.heading {
 		font-size: 24px;
 	}
@@ -386,7 +399,7 @@ body {
 		display: flex;
 		height: 60px;
 		align-items: center;
-		justify-content: 
+		margin-top: 24px;
 	}
 	.icon-container {
 		margin-left: 20px;
