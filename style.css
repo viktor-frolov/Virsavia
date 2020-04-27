@@ -37,6 +37,11 @@ body {
 	margin-left: 7.6%;
 	width: 100%;
 }
+.virsavia-logo {
+ 	display: flex;
+ 	justify-content: center;
+  	align-items: center;
+ }
 .nav {
 	width: 50%;
 	display: flex;
@@ -49,7 +54,17 @@ body {
  	font-size: 24px;
  	letter-spacing: 1px;
 }
- .button_header {
+ .button-header {
+ 	width: 210px;
+ 	height: 44px;
+ 	box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.button-banner {
  	width: 210px;
  	height: 44px;
  	box-sizing: border-box;
@@ -63,6 +78,141 @@ body {
  	font-size: 18px;
  	letter-spacing: 1px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+
+/*.hamburger-menu {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}*/
+
+
+/* контейнер меню */
+.menu__box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+  /*display: block;*/
+  position: absolute;
+  visibility: hidden;
+  top: 0px;
+  
+  right: 100px;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  /*box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);*/
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+
+
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -83,8 +233,7 @@ body {
   	justify-content: center;
   	align-items: center;
  }
- .virsavia-logo {
-
+ .virsavia-logo-banner {
  	display: flex;
  	justify-content: center;
   	align-items: center;
@@ -299,10 +448,17 @@ body {
 
 
 
-
+	.header {
+		padding: 12px 20px; 
+		height: 75px;
+	}
 
 	.virsavia-logo { /* почему то не отоброжается*/
 		width: 50px;
+		height: 50px;
+	}
+	.virsavia-logo-banner {
+		width: 350px;
 		height: 50px;
 	}
 	.banner-name {
@@ -361,11 +517,6 @@ body {
 		width: 300px;
 	}
 
-
-
-
-
-
 	.footer {
 		padding: 24px;
 	}
@@ -408,6 +559,28 @@ body {
 		width: 60px;
 		margin-top: 0px;
 }
+
+
+
+
+
+
+
+
+
+
+.nav {
+	display: none;
+}
+.button-header {
+	display: none;
+} 
+
+
+
+
+
+
 
 
 
