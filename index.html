@@ -35,11 +35,80 @@
 					<li><a href="#contacts-link" class="menu">Контакты</a></li>
 					<li><a href="#0" class="menu">Акции</a></li>
 				</ul>
-				<button class="button-header">
+
+
+
+
+
+
+
+
+
+
+			<button id="mybtn" class="button-header">
+				<span class="text-button">Заказать звонок</span>
+			</button>
+			<div id="mypopup" class="popup">
+				<div class="popup-content">
+					<div class="popup-header">
+						<span class="popup-header-text">Мы можем перезвонить Вам</span>
+						<span class="close">&times;</span>
+					</div>
+					<div class="popup-body">
+						<p>Укажите ваши контактные данные</p>
+						<p>ll,l,,l,l,l,l,l,l</p>
+					</div>
+					<div class="popup-footer">
+						<h3>popup Footer</h3>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				let popup = document.getElementById("mypopup"),
+				popupToggle = document.getElementById("mybtn"),
+				popupClose = document.querySelector(".close");
+
+				popupToggle.onclick = function() {
+					popup.style.display="block";
+				};
+
+				popupClose.onclick = function() {
+					popup.style.display="none";
+				}
+
+				window.onclick = function (e) {
+					if (e.target == popup) {
+						popup.style.display="none";
+					}
+				}
+			</script>
+
+<!--<button id="button-banner">
 					<a href="#0" class="menu-1">
 						<span class="text-button">Заказать звонок</span>
 					</a>
 				</button>
+
+
+				<button id="button-header">
+					<div id="popup">
+						<h2>Мы можем презвонить Вам</h2>
+						
+						
+					</div>
+				</button>-->
+				
+
+
+
+
+
+
+
+
+
+
 				<a href="#0" class="telephone">
 					<span class="menu">8 (923) 334 02 41</span> <!--Тут по идее нудна ссылка ,что бы при клике с мобтльго можно было сразу позвонить-->
 				</a>
@@ -76,17 +145,18 @@
 
 
 		<div class="hamburger-menu">
-  	<input id="menu__toggle" type="checkbox" />
-  	<label class="menu__btn" for="menu__toggle">
-    	<span></span>
-  	</label>
-  	<ul class="menu__box">
-    	<li><a class="menu__item" href="#">Услуги</a></li>
-    	<li><a class="menu__item" href="#studio-link">О нас</a></li>
-    	<li><a class="menu__item" href="#">Контакты</a></li>
-    	<li><a class="menu__item" href="#">Акции</a></li>
-  	</ul>
-</div>
+  			<input id="menu-toggle" type="checkbox" />
+  			<label class="menu-btn" for="menu-toggle">
+    			<span></span>
+  			</label>
+  			<ul class="menu-box">
+  				<li><a class="menu-item"  href="#home">Главная страница</a></li>
+    	<li><a class="menu-item"  href="#services-link">Услуги</a></li>
+    	<li><a class="menu-item" href="#studio-link">О нас</a></li>
+    	<li><a class="menu-item" href="#contacts-link">Контакты</a></li>
+    	<li><a class="menu-item" href="#">Акции</a></li>
+  			</ul>
+		</div>
 
 
 
@@ -117,18 +187,39 @@
 				<div id="services-link" name="services-link">
 					<h2 class="heading" >Наши услуги</h2>
 					<div class="services-list">
-						<a href="#0"><div class="services-1">
-							<img src="img/img-1.png" class="services-img">
-							<span class="services-text">Расслабляющие виды массажа</span>
-						</div></a>
-						<a href="#0"><div class="services-2">
-							<img src="img/img-4.png" class="services-img">
-							<span class="services-text">Скульптурные техники массажа лица</span>
-						</div></a>
-						<a href="#0"><div class="services-3">
-							<img src="img/img-3.png" class="services-img">
-							<span class="services-text">Коректирующие виды массажа</span>
-						</div></a>
+
+
+						
+
+
+
+
+
+						<a href="#0">
+							<div class="services-1">
+								<img src="img/img-1.png" class="services-img">
+								<span class="services-text">Расслабляющие виды массажа</span>
+							</div>
+						</a>
+						<a href="#0">
+							<div class="services-2">
+								<img src="img/img-2.png" class="services-img">
+								<span class="services-text">Скульптурные техники массажа лица</span>
+							</div>
+						</a>
+						<a href="#0">
+							<div class="services-3">
+								<img src="img/img-3.png" class="services-img">
+								<span class="services-text">Коректирующие виды массажа</span>
+							</div>
+						</a>
+
+
+
+
+
+
+
 					</div>
 				</div>
 
@@ -217,4 +308,3 @@
 </html>
 
 
-<!--..............1425px.............-->
