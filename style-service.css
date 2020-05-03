@@ -655,7 +655,6 @@ body {
 	.button-banner {
 		margin-top: 133px;
 		width: 236px;
-		display: block;
 	}
 	.services-list, .studio-list, .masters-list {
 		flex-direction: column;
@@ -782,7 +781,6 @@ body {
 	.button-banner {
 		margin-top: 133px;
 		width: 236px;
-		display: block;
 	}
 
 /*..........................main.........................*/
