@@ -31,6 +31,9 @@ body {
 
 
 .header {
+	position: fixed;
+	top: 0;
+	z-index: 5;
   	background-color: #85429F;
   	box-sizing: border-box;
   	padding: 12px 40px;
@@ -322,69 +325,6 @@ body {
 
 
 
-/*...........................banner.......................*/
-
-
-
-
-
-
-
-
-	
-
-.banner {
-	height: 697px;
-  	background-color: #85429F;
-  	background-image: url("img/banner.jpg");
-  	background-repeat: no-repeat;
-  	background-position: center center;
-  	background-size: cover; 
-  	box-sizing: border-box;
-  	display: flex;
-  	flex-direction: column;
-  	justify-content: center;
-  	align-items: center;
- }
- .virsavia-logo-banner {
- 	display: flex;
- 	justify-content: center;
-  	align-items: center;
- }
- .banner-name {
- 	margin-left: 10px;
- 	font-size: 62px;
- 	letter-spacing: 10px;
- 	color: #ffffff;
- 	text-transform: uppercase;
- }
-.text-banner {
-	font-size: 36px;
- 	letter-spacing: 1px;
- 	color: #ffffff;
- 	position: relative;
- 	margin-top: 34px;
-}
-.text-banner::before {
-	content: ""; 
-	position: absolute;
-	background-color: #ffffff;
-	width: 120px;
-	height: 2px;
-	top: -20px; 
-	left: 50%;
-	margin-left: -60px;
-	border-radius: 2px;
-}
-
-
-
-
-
-
-
-
-
 /*..........................main.........................*/
 
 
@@ -396,23 +336,20 @@ body {
 
 
 
-.services, .studio, .masters {
-	padding-top: 71px;
+.services {
+	margin-top: 103px;
+	padding-top: 58px;
 	padding-left: 105px;
 	padding-right: 105px;
 	padding-bottom: 29px;
+	
 }
-.heading {
-	font-size: 36px;
-	letter-spacing: 1px;
-	display: flex;                            /*тут видать надо текст алай*/
-    justify-content: center;
-    margin-bottom: 45px;
-    margin-block-start: 0px;
-}
-.services-list, .studio-list, .masters-list {
+.services-list {
+	
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 117px;
+
 }
 .service {
 	width: 350px;
@@ -426,48 +363,55 @@ body {
     border-radius: 300px;
     border: 4px solid #000000; 
 }
-
-.services-text, .studio-text, .masters-text {
-	text-align: center;
+.service-text-container {
+	margin-left: 105px;
+}
+.service-header {
+	position: relative;
+	font-family: Muller;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 120%;
+	letter-spacing: 0.02em;
+	margin: 0;
+}
+.services-text {
+	font-family: Muller;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
 	font-size: 24px;
 	letter-spacing: 1px;
+	line-height: 29px;
 	margin-top: 22px;
 }
-.studio-text {
-	text-align: left;
-}
-.studio-banner {
-	text-align: left;
-	font-size: 120px;
-	color: #85429F;
-}
-.masters-list {
-	align-items: flex-start;
-}
-.services-masters {
+.info-container {
+	
+	width: 350px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
-.masters-img {
-	margin-bottom: 24px;
+.info {
+	font-family: Muller;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	color: #85429F;
+	padding-right: 30px;
 }
-.masters-name {
-	margin: 0;
-	font-size: 36px;
-	text-align: left;
+.service-header::after {
+	content: ""; 
+	position: absolute;
+	background-color: #85429F;
+	width: 1230px;
+	height: 2px;
+	top: -60px;
+	left: -43%; 
+	border-radius: 2px;
 }
-.masters-position {
-	font-size: 24px;
-	text-align: left;
-}
-.masters-text {
-	text-align: left;
-	width: 460px;
-}
-
-
-
 
 
 
@@ -577,23 +521,8 @@ body {
 
 @media (min-width: 1440px)  {
 
-	.bammer {
-		max-width: 1440px;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	.services {
 		max-width: 1300px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.studio {
-		max-width: 1300px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.masters {
-		max-width: 1220px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -617,8 +546,10 @@ body {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 	
+/*..........................header......................*/
+
 	.hamburger-menu {
 		display: block;
 	}
@@ -635,81 +566,66 @@ body {
 	.header {
 		padding: 12px 20px; 
 	}
-	.banner {
-		padding-top: 120px;
-	}
 	.virsavia-logo { 
 		width: 50px;
 		height: 50px;
 	}
-	.virsavia-logo-banner {
-		width: 350px;
-	}
-	.banner-name {
-		font-size: 36px;
-	}
-	.text-banner {
-		font-size: 18px;
-		align-items: center;
-	}
-	.button-banner {
-		margin-top: 133px;
-		width: 236px;
-	}
-	.services-list, .studio-list, .masters-list {
+
+
+/*..........................main.........................*/
+
+
+	.services-list {
 		flex-direction: column;
 		align-items: center;
 	}
-	.services, .studio, .masters {
-		padding-left: 20px;
-		padding-right: 20px;
+	.services {
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: 74px;
 	}
-	.heading {
-		font-size: 24px;
-	}
+
 	.service {
 		margin-bottom: 50px;
 		align-items: center;
 	}
-	.services-text, .studio-text, .masters-text {
+	.service-text-container {
+		margin-left: 0px;
+	}
+	.services-text {
 		margin-top: 15px;
 		font-size: 18px;
 	}
-	.studio-text {
-		margin-top: 0px;
-	}
-	.masters-position {
-		font-size: 18px;
-	}
-	.masters-name {
+	.service-header {
 		font-size: 24px;
+		font-weight: bold;
 	}
-	.studio {
-		background-color: #F3F3F3;
+	.info-container {
+		width: 300px;
 	}
-	.studio-banner {
-		font-size: 48px;
-	}
-	.services-masters {
-		margin-bottom: 50px;
-	}
-	.img {
-		width:: 222px;
-		height: 222px;
-		border-radius: 150px;
-		margin-bottom: 24px;
-	}
-	.services-masters {
-		align-items: center;
+	.info {
+		font-size: 24px;
 	}
 	.services-img {
 		width: 225px;
 		height: 225px;
     	border: 2px solid #000000; 
 	}
-	.masters-text {
-		width: 300px;
+	.service-header::after {
+
+
+
+	width: 1230px;
+	height: 2px;
+	top: -340px;
+	left: -43%; 
+
 	}
+
+
+/*..........................footer.........................*/
+
+
 	.footer {
 		padding: 24px;
 	}
@@ -756,7 +672,7 @@ body {
 
 
 
-@media (min-width: 701px) and (max-width: 1439px) {
+@media (min-width: 901px) and (max-width: 1439px) {
 
 	/*..........................header......................*/
 
@@ -778,22 +694,21 @@ body {
 	.button-header {
 		display: none;
 	}
-	.button-banner {
-		margin-top: 133px;
-		width: 236px;
-	}
+
 
 /*..........................main.........................*/
 	
 
-	.services, .studio, .masters {
+	.services {
 		padding-left: 20px;
 		padding-right: 20px;
 		padding-top: 40px;
 		padding-bottom: 20px;
+		margin-top: 74px;
 	}
-	.heading {
-		font-size: 32px;
+	.service-header {
+		font-size: 24px;
+		font-weight: bold;
 	}
 	.services-img {
 		width: 225px;
@@ -801,7 +716,6 @@ body {
     	border: 2px solid #000000; 
 	}
 	.service {
-		
 		width: 250px;
 		margin-bottom: 50px;
 		align-items: center;
@@ -809,20 +723,18 @@ body {
 	.services-text {
 		font-size: 18px;
 	}
-	.services-list, .studio-list, .masters-list {
-		flex-wrap: wrap;
+	.services-list {
+		flex-wrap: nowrap;
 		justify-content: space-around;
 		align-items: flex-start;
 	}
-	.studio-banner {
-		font-size: 80px;
+	.info-container {
+		width: 300px;
 	}
-	.services-masters {
-		margin-bottom: 25px;
+	.info {
+		font-size: 24px;
 	}
-	.services-masters:nth-child(n+2) {
-		margin-left: 20px;
-	}
+
 
 
 /*..........................footer.........................*/

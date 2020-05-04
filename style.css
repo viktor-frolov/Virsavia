@@ -31,6 +31,9 @@ body {
 
 
 .header {
+	position: fixed;
+	top: 0;
+	z-index: 5;
   	background-color: #85429F;
   	box-sizing: border-box;
   	padding: 12px 40px;
@@ -334,6 +337,7 @@ body {
 	
 
 .banner {
+	margin-top: 103px;
 	height: 697px;
   	background-color: #85429F;
   	background-image: url("img/banner.jpg");
@@ -405,7 +409,7 @@ body {
 .heading {
 	font-size: 36px;
 	letter-spacing: 1px;
-	display: flex;                            /*тут видать надо текст алай*/
+	display: flex;                            
     justify-content: center;
     margin-bottom: 45px;
     margin-block-start: 0px;
@@ -637,6 +641,7 @@ body {
 	}
 	.banner {
 		padding-top: 120px;
+		margin-top: 74px;
 	}
 	.virsavia-logo { 
 		width: 50px;
@@ -778,6 +783,9 @@ body {
 	}
 	.button-header {
 		display: none;
+	}
+	.banner {
+		margin-top: 74px;
 	}
 	.button-banner {
 		margin-top: 133px;

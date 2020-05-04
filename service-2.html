@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>  
+  		<meta charset="utf-8" />
+	  	<title>Diploma Frolov Viktor</title>
+	  	<link rel="stylesheet" href="style-service.css">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+	  	<script type="text/javascript">
+			$(document).ready(function() {
+   				 $('a[href^="#"]').click(function () { 
+    			 	elementClick = $(this).attr("href");
+    			 	destination = $(elementClick).offset().top;
+  					 $('html, body').animate({scrollTop: destination}, 1000);
+   			  		return false;
+ 			  	});
+			 });
+		</script>
+	</head>
+
+
+<!------------------------------------------Меню-------------------------------------------->
+
+
+
+	<body>
+		<header class="header">
+		<div class="header-container">	
+			<a class="virsavia-logo" href="index.html">
+				<svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<ellipse cx="39.2331" cy="39.5" rx="39.2331" ry="39.5" fill="white"/>
+				<ellipse cx="39.2331" cy="39.5" rx="35.4966" ry="35.2297" fill="#85429F"/>
+				<path d="M24.8297 16.9V61H43.4147C49.8407 61 59.6687 58.921 59.6687 48.904C59.6687 41.722 54.5027 38.824 50.8487 37.816C54.3137 36.808 57.9047 33.658 57.9047 28.051C57.9047 20.617 51.9197 16.9 42.9107 16.9H24.8297ZM54.3137 48.337C54.3137 55.582 47.8877 55.96 42.3437 55.96H30.1217V40.714H43.7927C48.0137 40.714 54.3137 41.47 54.3137 48.337ZM52.5497 28.807C52.5497 33.847 48.5177 35.674 43.9187 35.674H30.1217V21.94H42.4697C48.7067 21.94 52.5497 23.578 52.5497 28.807Z" fill="white"/>
+				</svg>
+			</a>
+
+<!------------------------------------------Меню-------------------------------------------->
+
+			<div class="menu-container">
+				<ul class="nav">
+					<li><a href="index.html#services-link" class="menu">Услуги</a></li>
+					<li><a href="index.html#studio-link" class="menu">О нас</a></li>
+					<li><a href="index.html#contacts-link" class="menu">Контакты</a></li>
+					<li><a href="index.html#0" class="menu">Акции</a></li>
+				</ul>
+
+<!------------------------------------------Заказ звонка-------------------------------------------->
+
+			<button data-popup="mypopup" class="open-popup button-header">
+				<span class="text-button">Заказать звонок</span>
+			</button>
+			<div id="mypopup" class="popup">
+				<div class="popup-content">
+					<div class="popup-header">
+						<span class="popup-header-text">Мы можем перезвонить Вам</span>
+						<span class="close">&times;</span>
+					</div>
+
+					<form class="form">
+						<div class="popup-body">
+							<span class="form-text">Укажите Ваши контактные данные</span>
+							<label class="form-group">
+								<span class="form-text">Ваше имя</span>
+								<input type="text" class="field" placeholder="Мария" required>
+							</label>
+							<label class="form-group">
+								<span class="form-text">Номер телефона</span>
+								<input type="text" class="field" placeholder="+7 (×××) ××× ×× ××" required>
+							</label>
+							<label class="form-group">
+								<span class="form-text">Удобное для вас время</span>
+								<input type="text" class="field" placeholder="Ближайшее">
+							</label>
+						</div>
+						<div class="popup-footer">
+							<button type="submit" class="button-popup">Перезвоните</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+<!------------------------------------------Телефон-------------------------------------------->
+
+				<a href="#0" class="telephone">
+					<a href="tel:89233340241" class="menu">8 (923) 334 02 41</a> 
+				</a>
+
+<!------------------------------------------Бургер меню-------------------------------------------->
+
+		<div class="hamburger-menu">
+  			<input id="menu-toggle" type="checkbox" />
+  			<label class="menu-btn" for="menu-toggle">
+    			<span></span>
+  			</label>
+  			<ul class="menu-box">
+  				<li><a class="menu-item"  href="#home">Главная страница</a></li>
+    	<li><a class="menu-item"  href="index.html#services-link">Услуги</a></li>
+    	<li><a class="menu-item" href="index.html#studio-link">О нас</a></li>
+    	<li><a class="menu-item" href="index.html#contacts-link">Контакты</a></li>
+    	<li><a class="menu-item" href="index.html#">Акции</a></li>
+  			</ul>
+		</div>
+		</header>
+		<main class="main">
+
+
+
+
+<!------------------------------------------Скрипт для кнопоки-------------------------------------------->
+
+			<script type="text/javascript">
+				let popupToggle = document.querySelectorAll(".open-popup"),
+					popupClose = document.querySelectorAll(".close");
+					popupToggle.forEach(function(item) {
+						item.addEventListener("click" ,function(){
+							var popupName = item.getAttribute("data-popup");
+							document.getElementById(popupName).style.display = "block";
+						})
+					})
+					popupClose.forEach(function(item) {
+						item.addEventListener("click" ,function(){
+							var popup = item.closest(".popup");
+							popup.style.display = "none";
+						})
+					})
+				window.onclick = function (e) {
+					if(e.target.classList.contains("popup")) {
+						e.target.style.display="none";
+					}
+				}
+			</script>
+
+
+
+
+<!------------------------------------------Услуги-------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="services">
+				
+					
+					<div class="services-list">
+						<div class="service">
+							<img src="img/img-2-1.png" class="services-img">
+						</div>
+						<div class="service-text-container">
+							<h2 class="service-header">
+								Массаж шейно-воротниковой зоны
+							</h2>
+							<p class="services-text">Массаж шейно-воротниковой зоны несет оздоровительный эффект для всего организма и повышает жизненный тонус. Массаж нормализует кровообращение, улучшает обменные процессы, убирает застойные явления. Отмечается такой  эффект, как увеличение работоспособности, возвращение полноценного сна, также это отличная профилактика многих заболеваний опорно-двигательной системы.</p>
+							<div class="info-container">
+								<span class="info">25-30 мин.</span>
+								<span class="info">500 ₽</span>
+
+							</div>
+						</div>
+					</div>
+					<div class="services-list">
+						<div class="service">
+							<img src="img/img-2-2.png" class="services-img">
+						</div>
+						<div class="service-text-container">
+							<h2 class="service-header">
+								Массаж спины и шейно-воротниковой зоны
+							</h2>
+							<p class="services-text">Массаж спины – прекрасное средство для улучшения общего состояния, профилактической борьбы с воздействием на организм вредных факторов окружающей среды. Массаж спины повышает сопротивляемость организма различным инфекциям, стрессам, нормализует функции сальных и потовых желез, улучшает состояние одкожно-жировой клетчатки, в результате чего кожа становится гладкой, плотной, эластичной.</p>
+							<div class="info-container">
+								<span class="info">30 мин.</span>
+								<span class="info">700 ₽</span>
+								<span class="info">60 мин.</span>
+								<span class="info">1200 ₽</span>
+								
+							</div>
+						</div>
+					</div>
+					<div class="services-list">
+						<div class="service">
+							<img src="img/img-2-3.png" class="services-img">
+						</div>
+						<div class="service-text-container">
+							<h2 class="service-header">
+								Общий массаж тела
+							</h2>
+							<p class="services-text">Общий массаж тела обладает огромной пользой – это цикл процедур, включающий массаж рук, ног, спины и шеи, а также области груди и спины. Направлен он на весь организм, и эффект от него следует ожидать комплексный. Во время такого массажа полностью снимается напряжение с тела, восстанавливается кровообращение, лучшаются обменные процессы, появляется бодрость и сила. </p>
+							<div class="info-container">
+								<span class="info">60 мин.</span>
+								<span class="info">1200 ₽</span>
+								<span class="info">90 мин.</span>
+								<span class="info">1600 ₽</span>
+								
+							</div>
+						</div>
+					</div>
+					<div class="services-list">
+						<div class="service">
+							<img src="img/img-2-4.png" class="services-img">
+						</div>
+						<div class="service-text-container">
+							<h2 class="service-header">
+								Общий массаж тела включая стопы и массаж головы
+							</h2>
+							<p class="services-text">Общий массаж тела обладает огромной пользой – это цикл процедур, включающий массаж рук, ног и стоп, спины и шеи, лица и головы, а также области груди и спины. Направлен он на весь организм, и эффект от него следует ожидать комплексный. Во время такого массажа полностью снимается напряжение с тела, осстанавливается кровообращение, улучшаются обменные процессы, появляется бодрость и сила. </p>
+							<div class="info-container">
+								<span class="info">60 мин.</span>
+								<span class="info">1500 ₽</span>
+								<span class="info">90 мин.</span>
+								<span class="info">2000 ₽</span>
+							</div>
+						</div>
+					</div>
+					<div class="services-list">
+						<div class="service">
+							<img src="img/img-2-5.png" class="services-img">
+						</div>
+						<div class="service-text-container">
+							<h2 class="service-header">
+								Фитобочка с отдыхом и травяным чаем
+							</h2>
+							<p class="services-text">Ни одна другая процедура, которую сегодня могут предложить оздоровительные центры, не ожет сравниться по своему воздействию с пользой фитобочки. Эффект от этой процедуры не заканчивается на одтянутой и упругой коже, так же она оказывает очень положительный эффект на укрепление имунитета, укрепление сердечно-сосудистой системы. Регулярные сеансы позволят очень быстро избавиться и от лишних килограммов. </p>
+							<div class="info-container">
+								<span class="info">30 мин.</span>
+								<span class="info">500 ₽</span>
+								
+							</div>
+						</div>
+					</div>
+				
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------Футер-------------------------------------------->
+
+		<footer class="footer">
+		<div class="footer-container">
+			<div class="contacts" id="contacts-link">
+				<span class="footer-text">Контактный телефон</span>
+				<a href="tel:89233340241" class="phone">8 (923) 334 02 41</a>
+				<span class="address-name">Адрес студии:</span>
+				<span class="address">Красноярск, ул.Высотная 2 стр.8 Октябрьский офисный центр, кабинет 305/1</span>
+			</div class="map-container">
+			<div class="map"> 
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae47a94cbe5294c2990101b223492e376f96aa733432e0420f08372f52c090a05&amp;width=440&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+			<div class="social-container">
+				<span class="footer-text">Мы в соцснтях</span>
+				<ul class="icon-container">
+					<li class="socials-item">
+						<a href="#https://vk.com/virsaviyamassage" class="social social-vk">
+							<span class="socials-link-text">VK</span> 
+						</a>
+					</li>
+					<li class="socials-item">
+						<a href="#https://www.instagram.com/massage_virsaviya/" class="social social-inst">
+							<span class="socials-link-text">instagram</span> 
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</footer>
+	</body>	
+</html>
+
+

@@ -26,7 +26,7 @@
 	<body>
 		<header class="header">
 		<div class="header-container">	
-			<a class="virsavia-logo" href="#home">
+			<a class="virsavia-logo" href="index.html">
 				<svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<ellipse cx="39.2331" cy="39.5" rx="39.2331" ry="39.5" fill="white"/>
 				<ellipse cx="39.2331" cy="39.5" rx="35.4966" ry="35.2297" fill="#85429F"/>
@@ -38,10 +38,10 @@
 
 			<div class="menu-container">
 				<ul class="nav">
-					<li><a href="#services-link" class="menu">Услуги</a></li>
-					<li><a href="#studio-link" class="menu">О нас</a></li>
-					<li><a href="#contacts-link" class="menu">Контакты</a></li>
-					<li><a href="#0" class="menu">Акции</a></li>
+					<li><a href="index.html#services-link" class="menu">Услуги</a></li>
+					<li><a href="index.html#studio-link" class="menu">О нас</a></li>
+					<li><a href="index.html#contacts-link" class="menu">Контакты</a></li>
+					<li><a href="index.html#0" class="menu">Акции</a></li>
 				</ul>
 
 <!------------------------------------------Заказ звонка-------------------------------------------->
@@ -94,83 +94,19 @@
   			</label>
   			<ul class="menu-box">
   				<li><a class="menu-item"  href="#home">Главная страница</a></li>
-    	<li><a class="menu-item"  href="#services-link">Услуги</a></li>
-    	<li><a class="menu-item" href="#studio-link">О нас</a></li>
-    	<li><a class="menu-item" href="#contacts-link">Контакты</a></li>
-    	<li><a class="menu-item" href="#">Акции</a></li>
+    	<li><a class="menu-item"  href="index.html#services-link">Услуги</a></li>
+    	<li><a class="menu-item" href="index.html#studio-link">О нас</a></li>
+    	<li><a class="menu-item" href="index.html#contacts-link">Контакты</a></li>
+    	<li><a class="menu-item" href="index.html#">Акции</a></li>
   			</ul>
 		</div>
 		</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!------------------------------------------Банер-------------------------------------------->
-
-		
 		<main class="main">
 
 
-<!--------------------------Кнопка заказа звонка для мобильной версии----------------------------------->
 
-			<button data-popup="mypopup-1" class="open-popup button-banner">
-				<span class="text-button">Заказать звонок</span>
-			</button>
-			<div id="mypopup-1" class="popup">
-				<div class="popup-content">
-					<div class="popup-header">
-						<span class="popup-header-text">Мы можем перезвонить Вам</span>
-						<span class="close">&times;</span>
-					</div>
-					<form class="form">
-						<div class="popup-body">
-							<span class="form-text">Укажите Ваши контактные данные</span>
-							<label class="form-group">
-								<span class="form-text">Ваше имя</span>
-								<input type="text" class="field" placeholder="Мария" required>
-							</label>
-							<label class="form-group">
-								<span class="form-text">Номер телефона</span>
-								<input type="text" class="field" placeholder="+7 (×××) ××× ×× ××" required>
-							</label>
-							<label class="form-group">
-								<span class="form-text">Удобное для вас время</span>
-								<input type="text" class="field" placeholder="Ближайшее">
-							</label>
-						</div>
-						<div class="popup-footer">
-							<button type="submit" class="button-popup">Перезвоните</button>
-						</div>
-					</form>
-				</div>
-			</div>
 
-<!------------------------------------------Скрипт для кнопок-------------------------------------------->
+<!------------------------------------------Скрипт для кнопоки-------------------------------------------->
 
 			<script type="text/javascript">
 				let popupToggle = document.querySelectorAll(".open-popup"),
@@ -193,50 +129,121 @@
 					}
 				}
 			</script>
-			<!--<script type="text/javascript">
-				let popup = document.getElementById("mypopup1"),
-				popupToggle = document.getElementById("mybtn1"),
-				popupClose = document.querySelector(".close");
-				popupToggle.onclick = function() {
-					popup.style.display="block";
-				};
-				popupClose.onclick = function() {
-					popup.style.display="none";
-				}
-				window.onclick = function (e) {
-					if (e.target == popup) {
-						popup.style.display="none";
-					}
-				}
-			</script>-->
+
+
 
 
 <!------------------------------------------Услуги-------------------------------------------->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			<div class="services">
-				<div id="services-link" name="services-link">
-					<h2 class="heading" >Наши услуги</h2>
+				
+					
 					<div class="services-list">
-						<a href="#0">
-							<div class="service">
-								<img src="img/img-1.png" class="services-img">
-								<span class="services-text">Расслабляющие виды массажа</span>
+						<div class="service">
+							<img src="img/img-1-1.png" class="services-img">
+						</div>
+						<div class="service-text-container">
+							<h2 class="service-header">
+								Массаж шейно-воротниковой зоны
+							</h2>
+							<p class="services-text">Массаж шейно-воротниковой зоны несет оздоровительный эффект для всего организма и повышает жизненный тонус. Массаж нормализует кровообращение, улучшает обменные процессы, убирает застойные явления. Отмечается такой  эффект, как увеличение работоспособности, возвращение полноценного сна, также это отличная профилактика многих заболеваний опорно-двигательной системы.</p>
+							<div class="info-container">
+								<span class="info">25-30 мин.</span>
+								<span class="info">500 ₽</span>
+
 							</div>
-						</a>
-						<a href="#0">
-							<div class="service">
-								<img src="img/img-2.png" class="services-img">
-								<span class="services-text">Скульптурные техники массажа лица</span>
-							</div>
-						</a>
-						<a href="#0">
-							<div class="service">
-								<img src="img/img-3.png" class="services-img">
-								<span class="services-text">Коректирующие виды массажа</span>
-							</div>
-						</a>
+						</div>
 					</div>
-				</div>
+					<div class="services-list">
+						<div class="service">
+							<img src="img/img-1-2.png" class="services-img">
+						</div>
+						<div class="service-text-container">
+							<h2 class="service-header">
+								Массаж спины и шейно-воротниковой зоны
+							</h2>
+							<p class="services-text">Массаж спины – прекрасное средство для улучшения общего состояния, профилактической борьбы с воздействием на организм вредных факторов окружающей среды. Массаж спины повышает сопротивляемость организма различным инфекциям, стрессам, нормализует функции сальных и потовых желез, улучшает состояние одкожно-жировой клетчатки, в результате чего кожа становится гладкой, плотной, эластичной.</p>
+							<div class="info-container">
+								<span class="info">30 мин.</span>
+								<span class="info">700 ₽</span>
+								<span class="info">60 мин.</span>
+								<span class="info">1200 ₽</span>
+								
+							</div>
+						</div>
+					</div>
+					<div class="services-list">
+						<div class="service">
+							<img src="img/img-1-3.png" class="services-img">
+						</div>
+						<div class="service-text-container">
+							<h2 class="service-header">
+								Общий массаж тела
+							</h2>
+							<p class="services-text">Общий массаж тела обладает огромной пользой – это цикл процедур, включающий массаж рук, ног, спины и шеи, а также области груди и спины. Направлен он на весь организм, и эффект от него следует ожидать комплексный. Во время такого массажа полностью снимается напряжение с тела, восстанавливается кровообращение, лучшаются обменные процессы, появляется бодрость и сила. </p>
+							<div class="info-container">
+								<span class="info">60 мин.</span>
+								<span class="info">1200 ₽</span>
+								<span class="info">90 мин.</span>
+								<span class="info">1600 ₽</span>
+								
+							</div>
+						</div>
+					</div>
+					<div class="services-list">
+						<div class="service">
+							<img src="img/img-1-4.png" class="services-img">
+						</div>
+						<div class="service-text-container">
+							<h2 class="service-header">
+								Общий массаж тела включая стопы и массаж головы
+							</h2>
+							<p class="services-text">Общий массаж тела обладает огромной пользой – это цикл процедур, включающий массаж рук, ног и стоп, спины и шеи, лица и головы, а также области груди и спины. Направлен он на весь организм, и эффект от него следует ожидать комплексный. Во время такого массажа полностью снимается напряжение с тела, осстанавливается кровообращение, улучшаются обменные процессы, появляется бодрость и сила. </p>
+							<div class="info-container">
+								<span class="info">60 мин.</span>
+								<span class="info">1500 ₽</span>
+								<span class="info">90 мин.</span>
+								<span class="info">2000 ₽</span>
+							</div>
+						</div>
+					</div>
+					<div class="services-list">
+						<div class="service">
+							<img src="img/img-1-5.png" class="services-img">
+						</div>
+						<div class="service-text-container">
+							<h2 class="service-header">
+								Фитобочка с отдыхом и травяным чаем
+							</h2>
+							<p class="services-text">Ни одна другая процедура, которую сегодня могут предложить оздоровительные центры, не ожет сравниться по своему воздействию с пользой фитобочки. Эффект от этой процедуры не заканчивается на одтянутой и упругой коже, так же она оказывает очень положительный эффект на укрепление имунитета, укрепление сердечно-сосудистой системы. Регулярные сеансы позволят очень быстро избавиться и от лишних килограммов. </p>
+							<div class="info-container">
+								<span class="info">30 мин.</span>
+								<span class="info">500 ₽</span>
+								
+							</div>
+						</div>
+					</div>
+				
 			</div>
 
 
