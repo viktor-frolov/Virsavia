@@ -33,7 +33,7 @@ body {
 .header {
 	position: fixed;
 	top: 0;
-	z-index: 5;
+	z-index: 1;
   	background-color: #85429F;
   	box-sizing: border-box;
   	padding: 12px 40px;
@@ -70,6 +70,9 @@ body {
  	font-size: 24px;
  	letter-spacing: 1px;
 }
+.menu:hover {
+	color: #C2A0CF;
+}
 
 
 
@@ -84,7 +87,7 @@ body {
 .popup {
 	display: none;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -153,10 +156,6 @@ body {
 .popup-body {
 	margin-left: 81px;
 }
-.popup-footer {
-	color: white;
-	margin-left: 81px;
-}
 .form-group {
 	display: block;
 	margin-top: 34px;
@@ -179,16 +178,19 @@ body {
 	position: absolute;
 	width: 206px;
 	padding: 10px 11px;
-	background: #C2A0CF;
+	background: #85429F;
 	border-radius: 10px;
 	font-size: inherit;
 	cursor: pointer;
-	border: 1px solid #C2A0CF;
-}
-.button-popup:hover {
-	background: #85429F;
+	border: 1px solid #85429F;
 	color: #ffffff;
 }
+.button-popup:hover {
+	background: #ffffff;
+	color: #000000;
+	border: 2px solid #85429F;
+}
+
 
 /*..........................popup-button......................*/
 
@@ -202,6 +204,11 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
+}
+.open-popup:hover {
+	background-color: #C2A0CF;
+	border: 1px solid #C2A0CF;
+	color: #ffffff;
 }
 .button-banner {
  	width: 210px;
@@ -430,7 +437,9 @@ body {
     border-radius: 300px;
     border: 4px solid #000000; 
 }
-
+.services-img:hover {
+	border: 4px solid #85429F;
+}
 .services-text, .studio-text, .masters-text {
 	text-align: center;
 	font-size: 24px;
@@ -439,6 +448,9 @@ body {
 }
 .studio-text {
 	text-align: left;
+}
+.service:hover {
+	color: #85429F;
 }
 .studio-banner {
 	text-align: left;
@@ -814,7 +826,7 @@ body {
 		
 		width: 250px;
 		margin-bottom: 50px;
-		align-items: center;
+		align-items: flex-start;
 	}
 	.services-text {
 		font-size: 18px;
@@ -871,4 +883,51 @@ body {
 	.map {
 		display: none;
 	}
+
+
+/*......................................media для popup......................................*/
+
+
+	.popup-content {
+		width: 70%;
+		height: auto;
+		padding-bottom: 120px;
+	}
+	.popup-header-text {
+		font-size: 22px;
+		margin-top: 41px;
+		margin-left: 5%;
+		margin-bottom: 40px;
+		letter-spacing: 0.5px;
+	}
+	.popup-body {
+		margin-left: 5%;
+	}
+	.form-text {
+		margin-bottom: 6px; 
+	}
+	.form {
+		font-size: 18px;
+	}
+	.field {
+		width: 90%;
+	}
+	.form-group {
+		margin-top: 24px;
+	}
 }
+
+
+
+
+/*......................................media для popup......................................*/
+
+
+@media (max-width: 550px) {
+	.popup-content {
+		width: 98%;
+	}
+}
+
+
+

@@ -70,6 +70,9 @@ body {
  	font-size: 24px;
  	letter-spacing: 1px;
 }
+.menu:hover {
+	color: #C2A0CF;
+}
 
 
 
@@ -179,15 +182,17 @@ body {
 	position: absolute;
 	width: 206px;
 	padding: 10px 11px;
-	background: #C2A0CF;
+	background: #85429F;
 	border-radius: 10px;
 	font-size: inherit;
 	cursor: pointer;
-	border: 1px solid #C2A0CF;
+	border: 1px solid #85429F;
+	color: #ffffff;
 }
 .button-popup:hover {
-	background: #85429F;
-	color: #ffffff;
+	background: #ffffff;
+	color: #000000;
+	border: 2px solid #85429F;
 }
 
 /*..........................popup-button......................*/
@@ -203,6 +208,12 @@ body {
     margin-right: 20px;
     cursor: pointer;
 }
+.open-popup:hover {
+	background-color: #C2A0CF;
+	border: 1px solid #C2A0CF;
+	color: #ffffff;
+}
+
 .button-banner {
  	width: 210px;
  	padding: 10px 11px;
@@ -366,7 +377,7 @@ body {
 .service-text-container {
 	margin-left: 105px;
 }
-.service-header {
+.service-header, .service-header-2 {
 	position: relative;
 	font-family: Muller;
 	font-style: normal;
@@ -375,6 +386,9 @@ body {
 	line-height: 120%;
 	letter-spacing: 0.02em;
 	margin: 0;
+}
+.service-header-2 {
+	margin-top: 40px;
 }
 .services-text {
 	font-family: Muller;
@@ -387,13 +401,19 @@ body {
 	margin-top: 22px;
 }
 .info-container {
-	
 	width: 350px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-.info {
+.depilation {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+.info, .info-name, .info-depilation {
 	font-family: Muller;
 	font-style: normal;
 	font-weight: normal;
@@ -401,6 +421,16 @@ body {
 	line-height: 30px;
 	color: #85429F;
 	padding-right: 30px;
+}
+.info-depilation {
+	width: 115px;
+	margin-bottom: 8px;
+	padding-right: 0px;
+}
+.info-name {
+	color: #000000;
+	margin-bottom: 8px;
+	padding-right: 0px;
 }
 .service-header::after {
 	content: ""; 
@@ -412,8 +442,9 @@ body {
 	left: -43%; 
 	border-radius: 2px;
 }
-
-
+.info-container-depilation {
+	display: flex;
+}
 
 
 
@@ -596,7 +627,7 @@ body {
 		margin-top: 15px;
 		font-size: 18px;
 	}
-	.service-header {
+	.service-header, .service-header-2 {
 		font-size: 24px;
 		font-weight: bold;
 	}
@@ -612,13 +643,10 @@ body {
     	border: 2px solid #000000; 
 	}
 	.service-header::after {
-
-
-
-	width: 1230px;
-	height: 2px;
-	top: -340px;
-	left: -43%; 
+		width: 1230px;
+		height: 2px;
+		top: -340px;
+		left: -43%; 
 
 	}
 
@@ -706,7 +734,7 @@ body {
 		padding-bottom: 20px;
 		margin-top: 74px;
 	}
-	.service-header {
+	.service-header, .service-header-2 {
 		font-size: 24px;
 		font-weight: bold;
 	}
@@ -772,5 +800,18 @@ body {
 @media (max-width: 1100px) {
 	.map {
 		display: none;
+	}
+}
+
+
+/*......................................media для map......................................*/
+
+
+@media (max-width: 470px) {
+	.services-text {
+		font-size: 14px;
+	}
+	.menu {
+		font-size: 18px;
 	}
 }
