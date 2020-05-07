@@ -38,7 +38,7 @@ body {
   	box-sizing: border-box;
   	padding: 12px 40px;
 	display: flex;
-	width: 100%;
+	width: 100vw;
 }
 .header-container {
 	display: flex;
@@ -69,6 +69,7 @@ body {
  	color: #ffffff;
  	font-size: 24px;
  	letter-spacing: 1px;
+ 	padding: 3px 5px;
 }
 .menu:hover {
 	color: #C2A0CF;
@@ -461,6 +462,7 @@ body {
 	align-items: flex-start;
 }
 .services-masters {
+	width: 460px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -479,7 +481,7 @@ body {
 }
 .masters-text {
 	text-align: left;
-	width: 460px;
+	
 }
 
 
@@ -646,7 +648,8 @@ body {
 	} 
 	.menu-container {
 		justify-content: center;
-		margin-right: 7.6%;
+		margin-right: 4%;
+		margin-left: 4%;
 	}
 	.header {
 		padding: 12px 20px; 
@@ -823,7 +826,6 @@ body {
     	border: 2px solid #000000; 
 	}
 	.service {
-		
 		width: 250px;
 		margin-bottom: 50px;
 		align-items: flex-start;

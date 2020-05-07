@@ -38,7 +38,7 @@ body {
   	box-sizing: border-box;
   	padding: 12px 40px;
 	display: flex;
-	width: 100%;
+	width: 100vw;
 }
 .header-container {
 	display: flex;
@@ -69,6 +69,7 @@ body {
  	color: #ffffff;
  	font-size: 24px;
  	letter-spacing: 1px;
+ 	padding: 3px 5px;
 }
 .menu:hover {
 	color: #C2A0CF;
@@ -813,5 +814,9 @@ body {
 	}
 	.menu {
 		font-size: 18px;
+	}
+	.menu-container {
+		margin-right: 4%;
+		margin-left: 4%;
 	}
 }
