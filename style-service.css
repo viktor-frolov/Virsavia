@@ -247,7 +247,7 @@ body {
 
 
 
-.hamburger-menu {
+/*.hamburger-menu {
 	display: none;
 }
 #menu-toggle {
@@ -325,9 +325,125 @@ body {
 #menu-toggle:checked ~ .menu-box {
   	visibility: visible;
   	left: 0;
+}*/
+
+.menu-btn {
+  	display: flex; 
+  	align-items: center;  
+  	position: absolute;
+  	top: 22px;
+  	right: 25px;
+  	width: 26px;
+  	height: 26px;
+  	cursor: pointer;
+  	z-index: 30;
 }
-
-
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  	display: block;
+  	position: absolute;
+  	width: 100%;
+  	height: 2px;
+  	background-color: #ffffff;
+}
+.menu-btn > span::before {
+  	content: '';
+  	top: -8px;
+}
+.menu-btn > span::after {
+  	content: '';
+  	top: 8px;
+}
+.menu-box {
+  	padding-top: 80px;
+	position: fixed;
+	z-index: 20;
+	display: flex;
+	flex-flow: column;
+	background-color: #2a2a2a;
+	overflow-y: auto;
+	right: -100%;
+	transition: 0.5s;
+}
+.menu-item {
+	position: relative;
+  	display: block;
+  	color: #85429F;
+  	padding: 14px 24px;
+  	font-size: 20px;
+  	font-weight: 600;
+  	text-decoration: none;
+}
+.menu-item:hover {
+  	color: #C2A0CF;
+}
+.burger-menu_lines,
+.burger-menu_lines::after,
+.burger-menu_lines::before {
+	position: absolute;
+	width: 40px;
+	height: 6px;
+	background-color: #85429F;
+	transition: all 0.3s ease 0s;
+}
+.burger-menu_lines {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.burger-menu_lines::before {
+	content: "";
+	top: -12px;
+}
+.burger-menu_lines::after {
+	content: "";
+	top: 12px;
+}
+.burger-menu-active .burger-menu_lines {
+	background-color: transparent;
+}
+.burger-menu-active .burger-menu_lines::after {
+	top: 0;
+	transform: rotate(45deg);
+	background-color: #85429F;
+	z-index: 40;
+}
+.burger-menu-active .burger-menu_lines::before {
+	top: 0;
+	transform: rotate(-45deg);
+	background-color: #85429F;
+}
+.burger-menu_nav {
+	display: block;
+  	position: absolute;
+  	top: -400%;
+  	right: 0;
+  	width: 100%;
+  	margin: 0;
+  	padding-inline-start: 0;
+  	list-style: none;
+  	text-align: left;
+  	background-color: #ffffff;
+  	box-shadow: 1px 0px 6px rgba(1, 7, 4, 2);
+  	z-index: 20;
+  	transition: all 0.3s ease 0s;
+}
+.burger-menu-active .burger-menu_nav {
+	top:  0;
+}
+.burger-menu_overlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.burger-menu-active .burger-menu_overlay {
+	display: block;
+}
 
 
 
@@ -826,6 +942,9 @@ body {
 
 @media (max-width: 550px) {
 	.popup-content {
-		width: 96vw;
+		width: 90vw;
+	}
+	.popup {
+		width: 100vw;
 	}
 }

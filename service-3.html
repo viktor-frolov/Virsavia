@@ -6,15 +6,19 @@
 	  	<link rel="stylesheet" href="style-service.css">
 	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  	<script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
-	  	<script type="text/javascript">
+	 	<script type="text/javascript">
+
+
 			$(document).ready(function() {
    				 $('a[href^="#"]').click(function () { 
     			 	elementClick = $(this).attr("href");
-    			 	destination = $(elementClick).offset().top;
+    			 	destination = $(elementClick).offset().top -100;
   					 $('html, body').animate({scrollTop: destination}, 1000);
    			  		return false;
  			  	});
 			 });
+
+
 		</script>
 	</head>
 
@@ -87,7 +91,7 @@
 
 <!------------------------------------------Бургер меню-------------------------------------------->
 
-		<div class="hamburger-menu">
+<!--  		<div class="hamburger-menu">
   			<input id="menu-toggle" type="checkbox" />
   			<label class="menu-btn" for="menu-toggle">
     			<span></span>
@@ -99,9 +103,77 @@
     	<li><a class="menu-item" href="index.html#contacts-link">Контакты</a></li>
     	<li><a class="menu-item" href="index.html#">Акции</a></li>
   			</ul>
+		</div> -->
+
+
+
+
+
+
+		<main class="main"> 
+
+		<div class="hamburger-menu">
+  			<a href="" class="menu-btn">
+    			<span class="burger-menu_lines"></span>
+  			</a>
+  			<ul class="burger-menu_nav">
+  				<li><a class="menu-item" href="index.html">Главная страница</a></li>
+    			<li><a class="menu-item" href="index.html#services-link">Услуги</a></li>
+    			<li><a class="menu-item" href="index.html#studio-link">О нас</a></li>
+    			<li><a class="menu-item" href="index.html#contacts-link">Контакты</a></li>
+    			<li><a class="menu-item" href="">Акции</a></li>
+  			</ul>
+  			<div class="burger-menu_overlay"></div>
 		</div>
+
+
+
+
+
+		
+
+
+
+		<script type="text/javascript">
+			function burgermenu(selector) {
+				let menu = $(selector);
+				let button = menu.find(".menu-btn");
+				let links = menu.find(".menu-item");
+				let overlay = menu.find(".burger-menu_overlay");
+
+				button.on("click", (e) => {
+					e.preventDefault();
+					toggleMenu();
+				});
+
+				links.on("click", () => toggleMenu());
+				overlay.on("click", () => toggleMenu());
+
+				function toggleMenu() {
+					menu.toggleClass("burger-menu-active");
+
+					if (menu.hasClass("burger-menu-active")) {
+						$("body").css("overflow", "hidden");
+					} else {
+						$("body").css("overflow", "visible");
+					}
+				}
+			}
+			burgermenu(".hamburger-menu")
+		</script>
+
+
+
+
+
+
+
+
+
+
+		
 		</header>
-		<main class="main">
+
 
 
 
