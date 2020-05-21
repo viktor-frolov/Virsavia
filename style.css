@@ -972,6 +972,25 @@ body {
 	.popup {
 		width: 100vw;
 	}
+	.service {
+		width: 90vw;
+	}
+	.services, .studio, .masters  {
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+	.services-masters {
+		width: 90vw;
+	}
+	.virsavia-logo-banner {
+		width: 350px;
+	}
+	.masters-text {
+		width: 300px;
+	}
+	.footer-container {
+		width: 320px;
+	}
 }
 
 
