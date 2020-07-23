@@ -247,9 +247,10 @@ body {
 
 
 
-/*.hamburger-menu {
+.hamburger-menu {
 	display: none;
 }
+/*
 #menu-toggle {
   	opacity: 0;
 }
@@ -655,6 +656,161 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services-stocs-item {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 74px;
+	padding-top: 40px;
+	padding-left: 105px;
+	padding-right: 105px;
+	padding-bottom: 29px;
+}
+.stocs-header {
+	margin-bottom: 30px;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 24px;
+}
+.stocs-header:nth-child(n+2) {
+	margin-top: 90px;
+}
+.services-stocs-container {
+	display: flex;
+	justify-content: space-between;
+}
+.services-stocs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.stocs-text-container {
+	margin-top: 26px;
+	margin-bottom: 30px;
+	margin-left: 0;
+}
+.service-header-stocs {
+	font-size: 24px;
+	position: relative;
+	font-family: OpenSans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 120%;
+	letter-spacing: 0.02em;
+	margin: 0;
+	width: 250px;
+	text-align: center;
+}
+.stocs-info-container {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	/*padding-left: 200px;
+	padding-right: 200px;*/
+	box-sizing: border-box;
+	/*width: 620px;*/
+}
+.stocs-info-container::after {
+	content: "";
+	width: 1800px;
+	height: 2px;
+	position: relative;
+	background-color: #85429F;
+	top: 32px;
+}
+.cs-list {
+	padding-left: 250px;
+}
+.cs-list-2 {
+	padding-right: 250px;
+}
+.stocs-info {
+	padding-left: 40px;
+	text-align: left;
+}
+.stocs-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*......................................media......................................*/
 
 
@@ -684,12 +840,91 @@ body {
 		margin-right: auto;
 		margin-left: auto;
 	}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+.services-stocs-item {
+	max-width: 1510px;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 103px;
+	padding-top: 58px;
+	padding-left: 105px;
+	padding-right: 105px;
+	padding-bottom: 29px;
+}
+.stocs-header {
+	margin-bottom: 52px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 32px;
+}
+.stocs-header:nth-child(n+2) {
+	margin-top: 90px;
+}
+.services-stocs-container {
+	display: flex;
+	justify-content: space-between;
+}
+.services-stocs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.stocs-text-container {
+	margin-top: 26px;
+	margin-bottom: 30px;
+	margin-left: 0;
+}
+.service-header-stocs {
+	font-size: 24px;
+	position: relative;
+	font-family: OpenSans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 120%;
+	letter-spacing: 0.02em;
+	margin: 0;
+}
+.stocs-info-container {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	/*padding-left: 200px;
+	padding-right: 200px;*/
+	box-sizing: border-box;
+	/*width: 620px;*/
+}
+.stocs-info-container::after {
+	content: "";
+	width: 1800px;
+	height: 2px;
+	position: relative;
+	background-color: #85429F;
+	top: 32px;
+}
+.cs-list {
+	padding-left: 250px;
+}
+.cs-list-2 {
+	padding-right: 250px;
+}
+.stocs-info {
+	padding-left: 40px;
+	text-align: left;
+}
+.stocs-list {
+	list-style-type: none;
+	padding: 0;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
 }
 
 
 
 
-/*.....................................<700px......................................*/
+/*.....................................<900px......................................*/
 
 
 
@@ -808,11 +1043,81 @@ body {
   		background-position: 0% 0%; 
 	}
 
+.services-stocs-item {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.services-stocs-container {
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
 
 
-/*......................................701-1439px......................................*/
+
+
+
+
+
+
+
+
+
+
+}
+/*+--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*......................................901-1439px......................................*/
 
 
 
@@ -906,6 +1211,105 @@ body {
 		background-size: 60px;
   		background-position: 0% 0%; 
 	}
+/*+--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+.services-stocs-item {
+	padding-right: 50px;
+	padding-left: 50px;
+
+}
+.services-stocs-container {
+	justify-content: space-around;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+.info-container {
+	align-items: center;
+}
+.cs-list {
+	padding-left: 18.5vw;
+}
+.cs-list-2 {
+	padding-right: 18.5vw;
+}
+.stocs-list {
+	margin: 0; 
+}
+.stocs-info {
+	font-size: 18px;
+	line-height: 0;
+}
+.services-stocs {
+	width: 250px;
+}
+.stocs {
+	margin-bottom: 0;
+}
+.stocs-text-container {
+	margin-top: 20px;
+}
+.stocs-header {
+	margin-bottom: 35px;
+}
+.stocs-info-container {
+	width: 90vw;
+}
+.service-header-stocs {
+	text-align: center;
+	font-size: 18px;
+	width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -918,6 +1322,7 @@ body {
 	.map {
 		display: none;
 	}
+
 }
 
 
@@ -948,3 +1353,49 @@ body {
 		width: 100vw;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
